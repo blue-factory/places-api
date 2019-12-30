@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  #
+  # PLACES SERVICE
+  #
+  places-api:
+    container_name: places-api
+    build: .
+    ports:
+      - 5030:5030
+    environment:
+      - PORT=5030
